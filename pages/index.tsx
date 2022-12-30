@@ -1,7 +1,17 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
+import { Header } from "../components/Header";
+import {
+  IconBrandGithub as GitHub,
+  IconBrandTwitter as Twitter,
+  IconBrandLinkedin as LinkedIn,
+} from "@tabler/icons";
 
-const inter = Inter({ subsets: ["latin"] });
+const navs = ["Home", "About", "Contact"];
+const links = [
+  <GitHub key={1} />,
+  <Twitter key={2} />,
+  <LinkedIn key={3} />,
+];
 
 export default function Home() {
   return (
@@ -19,7 +29,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1 className="font-bold">Hello, World</h1>
+        <Header navs={navs} links={links} />
       </main>
     </>
   );
