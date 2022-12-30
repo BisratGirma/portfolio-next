@@ -8,9 +8,18 @@ import {
 
 const navs = ["Home", "About", "Contact"];
 const links = [
-  <GitHub key={1} />,
-  <Twitter key={2} />,
-  <LinkedIn key={3} />,
+  {
+    link: "https://github.com/bisratgirma",
+    element: <GitHub key={1} />,
+  },
+  {
+    link: "https://twitter.com/bisrat_girma_",
+    element: <Twitter key={2} />,
+  },
+  {
+    link: "https://linkedin.com/in/bisrat-girma",
+    element: <LinkedIn key={3} />,
+  },
 ];
 
 export default function Home() {

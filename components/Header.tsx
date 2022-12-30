@@ -9,12 +9,15 @@ const inter = Lobster({
 
 interface Props {
   navs: string[];
-  links?: Array<JSX.Element>;
+  links?: Array<{
+    link: string;
+    element: JSX.Element;
+  }>;
 }
 
 export const Header = ({ navs, links }: Props) => {
   return (
-    <header className="flex justify-between p-4 px-24 bg-slate-900 text-white">
+    <header className="flex justify-between p-3 px-28 bg-slate-900 bg-opacity-90 text-white">
       <div id="logo" className={inter.className}>
         <Link href="#" className="text-xl">
           Bisrat
@@ -31,16 +34,17 @@ export const Header = ({ navs, links }: Props) => {
           </li>
         ))}
       </ul>
-      <ul className="flex gap-6">
+      <div className="flex gap-6">
         {links?.map((element, k) => (
-          <li
+          <a
             key={k}
             className="hover:text-slate-300 cursor-pointer"
+            href={element.link}
           >
-            {element}
-          </li>
+            {element.element}
+          </a>
         ))}
-      </ul>
+      </div>
     </header>
   );
 };
