@@ -5,6 +5,7 @@ import {
   IconBrandTwitter as Twitter,
   IconBrandLinkedin as LinkedIn,
 } from "@tabler/icons";
+import { Hero } from "../components/Hero";
 
 const navs = ["Home", "About", "Contact"];
 const links = [
@@ -39,6 +40,7 @@ export default function Home() {
       </Head>
       <main>
         <Header navs={navs} links={links} />
+        <Hero />
       </main>
     </>
   );
