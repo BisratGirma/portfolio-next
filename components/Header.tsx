@@ -28,7 +28,7 @@ export const Header = ({ navs, links }: Props) => {
         {navs.map((item, k) => (
           <li
             key={k}
-            className="hover:text-white cursor-pointer"
+            className="hover:text-white hover:font-[480] cursor-pointer"
           >
             {item}
           </li>

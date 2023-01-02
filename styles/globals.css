@@ -1,10 +1,9 @@
 .wave {
-  z-index: -50;
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 3s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
-  display: inline-block;
+  display: inline-flex;
 }
 
 @keyframes wave-animation {
@@ -18,7 +17,7 @@
     transform: rotate(-8deg);
   }
   30% {
-    transform: rotate(14deg);
+    transform: rotate(21deg);
   }
   40% {
     transform: rotate(-4deg);
@@ -31,5 +30,31 @@
   } /* Reset for the last half to pause */
   100% {
     transform: rotate(0deg);
+  }
+}
+
+/* disapear rect */
+.rect {
+  width: 150px;
+  height: 100px;
+
+  margin: 100px;
+  position: fixed;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  0% {
+    left: -200px;
+    opacity: 1;
+  }
+  50% {
+    left: 300px;
+    opacity: 0.5;
+  }
+  100% {
+    left: 1000px;
+    opacity: 0;
   }
 }
