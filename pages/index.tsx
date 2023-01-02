@@ -7,6 +7,8 @@ import {
 } from "@tabler/icons";
 import { Hero } from "../components/Hero";
 import { AboutMe } from "../components/AboutMe";
+import Projects from "../components/Projects";
+import img from "../assets/banner.jpg";
 
 const navs = ["Home", "About", "Contact"];
 const links = [
@@ -22,6 +24,15 @@ const links = [
     link: "https://linkedin.com/in/bisrat-girma",
     element: <LinkedIn key={3} />,
   },
+];
+
+const projectDesc =
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
+const projects = [
+  { title: "hey", description: projectDesc, image: img },
+  { title: "hello", description: projectDesc, image: img },
+  { title: "hello", description: projectDesc, image: img },
+  { title: "hello", description: projectDesc, image: img },
 ];
 
 export default function Home() {
@@ -43,6 +54,7 @@ export default function Home() {
         <Header navs={navs} links={links} />
         <Hero />
         <AboutMe />
+        <Projects projects={projects} />
       </main>
     </>
   );

@@ -17,7 +17,7 @@ interface Props {
 
 export const Header = ({ navs, links }: Props) => {
   return (
-    <header className="fixed w-screen flex justify-between p-3 px-28 bg-slate-900 bg-opacity-80 backdrop-blur-md text-slate-200">
+    <header className="fixed z-50 w-screen flex justify-between p-3 px-28 bg-slate-900 bg-opacity-80 backdrop-blur-md text-slate-200">
       <div id="logo" className={inter.className}>
         <Link href="#" className="text-xl">
           Bisrat

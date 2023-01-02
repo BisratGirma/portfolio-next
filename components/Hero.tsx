@@ -4,7 +4,7 @@ import React from "react";
 
 export const Hero = () => {
   return (
-    <div className="flex justify-around gap-24 py-48">
+    <div className="flex justify-around gap-24 pt-44 mb-20">
       <div className="flex flex-col gap-3">
         <h5>
           <p className="wave">👋🏾</p> Hi, I&apos;m
