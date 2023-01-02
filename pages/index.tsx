@@ -4,11 +4,15 @@ import {
   IconBrandGithub as GitHub,
   IconBrandTwitter as Twitter,
   IconBrandLinkedin as LinkedIn,
+  IconBrandTelegram as Telegram,
+  IconBrandTelegram,
 } from "@tabler/icons";
 import { Hero } from "../components/Hero";
 import { AboutMe } from "../components/AboutMe";
 import Projects from "../components/Projects";
 import img from "../assets/banner.jpg";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const navs = ["Home", "About", "Contact"];
 const links = [
@@ -24,7 +28,19 @@ const links = [
     link: "https://linkedin.com/in/bisrat-girma",
     element: <LinkedIn key={3} />,
   },
+  {
+    link: "https://t.me/bisratgirma",
+    element: <Telegram key={4} />,
+  },
 ];
+
+const linksTwo = [
+  {
+    link: "https://t.me/bisratgirma",
+    icon: "IconBrandTelegram",
+  },
+];
+console.log(linksTwo);
 
 const projectDesc =
   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
@@ -55,6 +71,8 @@ export default function Home() {
         <Hero />
         <AboutMe />
         <Projects projects={projects} />
+        <Contact links={linksTwo} />
+        <Footer />
       </main>
     </>
   );
