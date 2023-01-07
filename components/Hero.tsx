@@ -5,7 +5,7 @@ export const Hero = () => {
     <div className="flex justify-around gap-24 pt-44 mb-20">
       <div className="flex flex-col gap-3">
         <h5>
-          <p className="wave">👋🏾</p> Hi, I&apos;m
+           Hi, I&apos;m
         </h5>
         <h1 className="text-6xl">Bisrat Girma</h1>
         <h4 className="text-2xl">

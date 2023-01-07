@@ -17,32 +17,29 @@ interface Props {
 
 export const Header = ({ navs, links }: Props) => {
   return (
-    <header className="fixed z-50 w-screen flex justify-between p-3 px-28 bg-slate-900 bg-opacity-80 backdrop-blur-md text-slate-200">
+    <header className="fixed z-50 w-screen flex justify-between items-center pt-5 px-28 bg-white bg-opacity-80 backdrop-blur-md text-black">
       <div id="logo" className={inter.className}>
-        <Link href="#" className="text-xl">
+        <Link href="#" className="text-4xl">
           Bisrat
         </Link>
       </div>
 
       <ul className="flex gap-16">
         {navs.map((item, k) => (
-          <li
-            key={k}
-            className="hover:text-white hover:font-[480] cursor-pointer"
-          >
-            {item}
+          <li key={k} className="cursor-pointer">
+            <p className="hover:font-[480]">{item}</p>
           </li>
         ))}
       </ul>
       <div className="flex gap-6">
         {links?.map((element, k) => (
-          <a
+          <Link
             key={k}
-            className="hover:text-white cursor-pointer"
+            className="hover:text-black cursor-pointer"
             href={element.link}
           >
             {element.element}
-          </a>
+          </Link>
         ))}
       </div>
     </header>
