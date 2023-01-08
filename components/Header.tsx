@@ -32,15 +32,16 @@ export const Header = ({ navs, links }: Props) => {
         ))}
       </ul>
       <div className="flex gap-6">
-        {links?.map((element, k) => (
-          <Link
-            key={k}
-            className="hover:text-black cursor-pointer"
-            href={element.link}
-          >
-            {element.element}
-          </Link>
-        ))}
+        {links?.map(
+          (element, k) =>
+            // <Link
+            //   key={k}
+            //   className="hover:text-black cursor-pointer"
+            //   href={element.link}
+            // >
+            element.element
+            // </Link>
+        )}
       </div>
     </header>
   );

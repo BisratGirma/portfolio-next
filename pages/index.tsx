@@ -5,7 +5,6 @@ import {
   IconBrandTwitter as Twitter,
   IconBrandLinkedin as LinkedIn,
   IconBrandTelegram as Telegram,
-  IconBrandTelegram,
 } from "@tabler/icons";
 import { Hero } from "../components/Hero";
 import { AboutMe } from "../components/AboutMe";
@@ -71,7 +70,7 @@ export default function Home() {
         <Hero />
         <AboutMe />
         <Projects projects={projects} />
-        <Contact links={linksTwo} />
+        <Contact />
         <Footer />
       </main>
     </>

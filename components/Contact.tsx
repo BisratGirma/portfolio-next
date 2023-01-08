@@ -5,7 +5,6 @@ import {
 } from "@tabler/icons";
 import Link from "next/link";
 
-
 const Contact = () => {
   return (
     <div className="flex flex-col items-center">

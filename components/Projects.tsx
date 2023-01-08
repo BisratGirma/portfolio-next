@@ -26,12 +26,11 @@ const Projects = ({ projects }: Props) => {
             />
             <div className="p-6">
               <h3 className="text-3xl">{element.title}</h3>
-              <body>
-                {element.description.length > 150
-                  ? element.description.substring(150, 0) +
-                    "..."
-                  : element.description}
-              </body>
+
+              {element.description.length > 150
+                ? element.description.substring(150, 0) +
+                  "..."
+                : element.description}
             </div>
           </div>
         ))}
