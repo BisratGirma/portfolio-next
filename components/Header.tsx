@@ -19,7 +19,7 @@ export const Header = ({ navs, links }: Props) => {
   return (
     <header className="fixed z-50 w-screen flex justify-between items-center pt-5 px-28 bg-white bg-opacity-80 backdrop-blur-md text-black">
       <div id="logo" className={inter.className}>
-        <Link href="#" className="text-4xl">
+        <Link href="#" className="text-4xl ">
           Bisrat
         </Link>
       </div>
@@ -27,21 +27,22 @@ export const Header = ({ navs, links }: Props) => {
       <ul className="flex gap-16">
         {navs.map((item, k) => (
           <li key={k} className="cursor-pointer">
-            <p className="hover:font-[480]">{item}</p>
+            <p className="hover:font-[495] hover:text-blue-900 hover:text-[1.1rem] ">
+              {item}
+            </p>
           </li>
         ))}
       </ul>
       <div className="flex gap-6">
-        {links?.map(
-          (element, k) =>
-            // <Link
-            //   key={k}
-            //   className="hover:text-black cursor-pointer"
-            //   href={element.link}
-            // >
-            element.element
-            // </Link>
-        )}
+        {links?.map((element, k) => (
+          <Link
+            key={k}
+            className="hover:text-blue-900  cursor-pointer"
+            href={element.link}
+          >
+            {element.element}
+          </Link>
+        ))}
       </div>
     </header>
   );

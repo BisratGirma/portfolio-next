@@ -20,7 +20,9 @@ const Contact = () => {
         </div>
         <span className="text-2xl">or</span>
         <div className="text-3xl">
-          bisratgirma@gmail.com
+          <a href="mailto:bisatgirmat@gmail.com">
+            bisratgirmat@gmail.com
+          </a>
         </div>
       </div>
     </div>
