@@ -1,3 +1,7 @@
+body {
+  background-color: #f5f5dc;
+}
+
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 3s; /* Change to speed up or slow down */
@@ -57,4 +61,186 @@
     left: 1000px;
     opacity: 0;
   }
+}
+
+.ribble {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: gray;
+}
+.ribble:before {
+  content: "";
+  height: 100px;
+  width: 100px;
+  background: gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 0;
+  animation: ribble 2s infinite;
+}
+@keyframes ribble {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.inner {
+  width: 180%;
+  height: 360%;
+  border-radius: 1000px;
+  z-index: -100;
+  position: absolute;
+  top: 33%;
+  left: 83%;
+  transform: translate(-50%, -50%);
+  animation: spin 1000s linear infinite;
+  overflow: hidden;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.gradient-wrap {
+  width: 100%;
+  height: 50%;
+  overflow: inherit;
+}
+
+.gradient-wrap:last-child {
+  transform: rotate(180deg);
+}
+
+.gradient {
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(
+      180deg,
+      transparent 50%,
+      darkorange 50%,
+      darkorange 100%
+    ),
+    linear-gradient(
+      170deg,
+      transparent 50%,
+      orange 50%,
+      orange 100%
+    ),
+    linear-gradient(
+      160deg,
+      transparent 50%,
+      darkorange 50%,
+      darkorange 100%
+    ),
+    linear-gradient(
+      150deg,
+      transparent 50%,
+      orange 50%,
+      orange 100%
+    ),
+    linear-gradient(
+      140deg,
+      transparent 50%,
+      darkorange 50%,
+      darkorange 100%
+    ),
+    linear-gradient(
+      130deg,
+      transparent 50%,
+      orange 50%,
+      orange 100%
+    ),
+    linear-gradient(
+      120deg,
+      transparent 50%,
+      darkorange 50%,
+      darkorange 100%
+    ),
+    linear-gradient(
+      110deg,
+      transparent 50%,
+      orange 50%,
+      orange 100%
+    ),
+    linear-gradient(
+      100deg,
+      transparent 50%,
+      darkorange 50%,
+      darkorange 100%
+    ),
+    linear-gradient(
+      90deg,
+      transparent 50%,
+      orange 50%,
+      orange 100%
+    ),
+    linear-gradient(
+      80deg,
+      transparent 50%,
+      darkorange 50%,
+      darkorange 100%
+    ),
+    linear-gradient(
+      70deg,
+      transparent 50%,
+      orange 50%,
+      orange 100%
+    ),
+    linear-gradient(
+      60deg,
+      transparent 50%,
+      darkorange 50%,
+      darkorange 100%
+    ),
+    linear-gradient(
+      50deg,
+      transparent 50%,
+      orange 50%,
+      orange 100%
+    ),
+    linear-gradient(
+      40deg,
+      transparent 50%,
+      darkorange 50%,
+      darkorange 100%
+    ),
+    linear-gradient(
+      30deg,
+      transparent 50%,
+      orange 50%,
+      orange 100%
+    ),
+    linear-gradient(
+      20deg,
+      transparent 50%,
+      darkorange 50%,
+      darkorange 100%
+    ),
+    linear-gradient(
+      10deg,
+      transparent 50%,
+      orange 50%,
+      orange 100%
+    ),
+    linear-gradient(
+      0deg,
+      transparent 50%,
+      darkorange 50%,
+      darkorange 100%
+    );
 }

@@ -6,7 +6,7 @@ const bio =
 
 export const AboutMe = () => {
   return (
-    <div className="flex flex-col px-36 gap-9 my-20">
+    <div className="flex flex-col px-36 gap-9  bg-white">
       <h2 className="text-8xl">About Me</h2>
       <div className="flex gap-24">
         <p className="text-[30px] w-2/3 text-justify">

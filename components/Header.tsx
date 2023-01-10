@@ -17,7 +17,7 @@ interface Props {
 
 export const Header = ({ navs, links }: Props) => {
   return (
-    <header className="fixed z-50 w-screen flex justify-between items-center pt-5 px-28 bg-white bg-opacity-80 backdrop-blur-md text-black">
+    <header className=" w-screen flex justify-between items-center pt-5 px-28 bg-white  backdrop-blur-md text-black">
       <div id="logo" className={inter.className}>
         <Link href="#" className="text-4xl ">
           Bisrat
@@ -27,7 +27,7 @@ export const Header = ({ navs, links }: Props) => {
       <ul className="flex gap-16">
         {navs.map((item, k) => (
           <li key={k} className="cursor-pointer">
-            <p className="hover:font-[495] hover:text-blue-900 hover:text-[1.1rem] ">
+            <p className="hover:font-[495] hover:text-orange-600 border-b-2 border-transparent hover:border-orange-400">
               {item}
             </p>
           </li>
@@ -37,7 +37,7 @@ export const Header = ({ navs, links }: Props) => {
         {links?.map((element, k) => (
           <Link
             key={k}
-            className="hover:text-blue-900  cursor-pointer"
+            className="border-b-2 border-transparent hover:border-orange-400 hover:text-orange-600  cursor-pointer"
             href={element.link}
           >
             {element.element}

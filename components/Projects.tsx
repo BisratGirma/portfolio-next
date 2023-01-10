@@ -11,13 +11,13 @@ interface Props {
 
 const Projects = ({ projects }: Props) => {
   return (
-    <div className="flex flex-col items-center my-20 ">
+    <div className="flex flex-col items-center  bg-white ">
       <h2 className="text-8xl">Projects</h2>
       <div className="flex flex-wrap justify-center w-full p-16 gap-12">
         {projects.map((element, k) => (
           <div
             key={k}
-            className="w-[456px] h-[294px] border-[0.5px] rounded-3xl shadow-md "
+            className="w-[456px] hover:w-[465px] h-[294px] hover:h-[300px] border-[0.5px] rounded-3xl shadow-md "
           >
             <Image
               src={element.image}

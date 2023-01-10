@@ -13,7 +13,7 @@ import img from "../assets/banner.jpg";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
-const navs = ["Home", "About", "Contact"];
+const navs = ["HOME", "ABOUT", "CONTACT"];
 const links = [
   {
     link: "https://github.com/bisratgirma",
