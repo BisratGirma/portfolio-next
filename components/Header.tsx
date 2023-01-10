@@ -2,7 +2,7 @@ import React from "react";
 import { Lobster } from "@next/font/google";
 import Link from "next/link";
 
-const inter = Lobster({
+const lobster = Lobster({
   weight: "400",
   subsets: ["latin"],
 });
@@ -18,7 +18,7 @@ interface Props {
 export const Header = ({ navs, links }: Props) => {
   return (
     <header className=" w-screen flex justify-between items-center pt-5 px-28 bg-white  backdrop-blur-md text-black">
-      <div id="logo" className={inter.className}>
+      <div id="logo" className={lobster.className}>
         <Link href="#" className="text-4xl ">
           Bisrat
         </Link>
