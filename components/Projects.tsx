@@ -30,7 +30,7 @@ const Projects = ({ projects }: Props) => {
                   {element.title}
                 </h3>
 
-                <p className="text-[16px]">
+                <p className="text-[16px] w-96">
                   {element.description.length > 150
                     ? element.description.substring(
                         150,
