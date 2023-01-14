@@ -11,7 +11,7 @@ interface Props {
 
 const Projects = ({ projects }: Props) => {
   return (
-    <div className="flex flex-col items-center  bg-white ">
+    <div className="flex flex-col items-center my-12 bg-white ">
       <h2 className="text-8xl">Projects</h2>
       <div className="flex flex-wrap justify-center w-full p-16 gap-12">
         {projects.map((element, k) => (
@@ -23,7 +23,7 @@ const Projects = ({ projects }: Props) => {
               <Image
                 src={element.image}
                 alt={element.title}
-                className="h-[36%] w-full rounded-t-3xl "
+                className="h-[36%] w-full rounded-t-3xl"
               />
               <div className="p-6">
                 <h3 className="text-3xl">

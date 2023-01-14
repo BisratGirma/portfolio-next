@@ -17,7 +17,7 @@ interface Props {
 
 export const Header = ({ navs, links }: Props) => {
   return (
-    <header className=" w-full flex justify-between items-center pt-5 px-28 bg-white  backdrop-blur-md text-black">
+    <header className=" w-full flex justify-between items-center pt-5 px-28 bg-gray-700  backdrop-blur-md text-white">
       <div id="logo" className={lobster.className}>
         <Link href="#" className="text-4xl ">
           Bisrat
@@ -27,7 +27,7 @@ export const Header = ({ navs, links }: Props) => {
       <ul className="flex gap-16">
         {navs.map((item, k) => (
           <li key={k} className="cursor-pointer">
-            <p className="hover:font-[495] hover:text-orange-600 border-b-2 border-transparent hover:border-orange-400">
+            <p className="hover:font-[495] hover:text-orange-400 border-b-2 border-transparent hover:border-orange-400">
               {item}
             </p>
           </li>
@@ -37,7 +37,7 @@ export const Header = ({ navs, links }: Props) => {
         {links?.map((element, k) => (
           <Link
             key={k}
-            className="border-b-2 border-transparent hover:border-orange-400 hover:text-orange-600  cursor-pointer"
+            className="border-b-2 border-transparent hover:border-orange-400 hover:text-orange-400  cursor-pointer"
             href={element.link}
           >
             {element.element}
