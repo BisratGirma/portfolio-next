@@ -17,7 +17,7 @@ interface Props {
 
 export const Header = ({ navs, links }: Props) => {
   return (
-    <header className=" w-full flex justify-between items-center pt-5 px-28 bg-gray-700  backdrop-blur-md text-white">
+    <header className=" w-full flex justify-between items-center pt-7 pb-2 px-28 bg-black bg-opacity-70  backdrop-blur-md text-white">
       <div id="logo" className={lobster.className}>
         <Link href="#" className="text-4xl ">
           Bisrat

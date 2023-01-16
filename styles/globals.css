@@ -105,6 +105,7 @@ body {
   transform: translate(-50%, -50%);
   animation: spin 1000s linear infinite;
   overflow: hidden;
+
 }
 
 @keyframes spin {

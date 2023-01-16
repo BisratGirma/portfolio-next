@@ -12,6 +12,7 @@ import Projects from "../components/Projects";
 import img from "../assets/banner.jpg";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import WhatIDo from "../components/WhatIDo";
 
 const navs = ["HOME", "ABOUT", "CONTACT"];
 const links = [
@@ -69,6 +70,7 @@ export default function Home() {
         <Header navs={navs} links={links} />
         <Hero />
         <AboutMe />
+        <WhatIDo />
         <Projects projects={projects} />
         <Contact />
         <Footer />
