@@ -17,9 +17,9 @@ const Projects = ({ projects }: Props) => {
         {projects.map((element, k) => (
           <div
             key={k}
-            className="w-[465px] h-[300px] flex justify-center items-center cursor-pointer"
+            className="w-[465px] h-[300px] flex justify-center items-center cursor-pointer hover:scale-105 duration-300 "
           >
-            <div className="w-[456px] hover:w-full h-[294px] hover:h-full border-[0.5px] rounded-3xl shadow-md ">
+            <div className="w-[456px] h-[294px] border-[0.5px] rounded-3xl shadow-md ">
               <Image
                 src={element.image}
                 alt={element.title}
